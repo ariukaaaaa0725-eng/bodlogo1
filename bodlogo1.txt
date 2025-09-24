@@ -12,13 +12,10 @@ def check_nineteen_and_five(numbers):
     count_5 = numbers.count(5)
     
     return count_19 == 2 and count_5 >= 3
-
-
-# Test the function with the provided examples
 test_cases = [
-    [19, 19, 15, 5, 3, 5, 5, 2],  # Expected: True
-    [19, 15, 15, 5, 3, 3, 5, 2],  # Expected: False
-    [19, 19, 5, 5, 5, 5, 5]       # Expected: True
+    [19, 19, 15, 5, 3, 5, 5, 2],  
+    [19, 15, 15, 5, 3, 3, 5, 2], 
+    [19, 19, 5, 5, 5, 5, 5]       
 ]
 
 print("Testing the function:")
@@ -27,17 +24,14 @@ for i, test_case in enumerate(test_cases, 1):
     print(f"Input {i}: {test_case}")
     print(f"Output: {result}")
     print()
-
-# Additional test cases
 print("Additional test cases:")
 additional_tests = [
-    [19, 19, 19, 5, 5, 5],        # False (3 occurrences of 19)
-    [19, 5, 5, 5],                # False (only 1 occurrence of 19)
-    [19, 19, 5, 5],               # False (only 2 occurrences of 5)
-    [19, 19, 5, 5, 5],            # True (exactly 2 of 19, exactly 3 of 5)
-    []                            # False (empty list)
+    [19, 19, 19, 5, 5, 5],       
+    [19, 5, 5, 5],                
+    [19, 19, 5, 5],              
+    [19, 19, 5, 5, 5],            
+    []                            
 ]
-
 for i, test_case in enumerate(additional_tests, 1):
     result = check_nineteen_and_five(test_case)
     count_19 = test_case.count(19)
