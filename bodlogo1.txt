@@ -1,13 +1,4 @@
 def check_nineteen_and_five(numbers):
-    """
-    Check if a list has exactly 2 occurrences of 19 and at least 3 occurrences of 5.
-    
-    Args:
-        numbers (list): List of integers to check
-        
-    Returns:
-        bool: True if conditions are met, False otherwise
-    """
     count_19 = numbers.count(19)
     count_5 = numbers.count(5)
     
@@ -39,3 +30,4 @@ for i, test_case in enumerate(additional_tests, 1):
     print(f"Test {i}: {test_case}")
     print(f"19 count: {count_19}, 5 count: {count_5} → Result: {result}")
     print()
+
